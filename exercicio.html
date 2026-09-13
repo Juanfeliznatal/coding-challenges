@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Criador de Tags</title>
+</head>
+<body>
+    <input type="text" id="campo-tag" placeholder="Ex: javascript">
+    <button id="btn-adicionar">Adicionar Tag</button>
+    <ul id="lista-tags"></ul>
+
+    <script>
+        
+        const vazio = [];
+        const campoTag = document.getElementById("campo-tag");
+        const btnAdicionar = document.getElementById("btn-adicionar");
+        const listaTags = document.getElementById("lista-tags");
+
+        
+        btnAdicionar.addEventListener("click", () => {
+            
+            const novaTag = campoTag.value;
+            
+            
+            const tagFormatada = `${novaTag}`; 
+            
+            vazio.push(tagFormatada);
+            listaTags.innerHTML = "";
+            campoTag.value = "";
+            
+            for(let tag of vazio){
+                listaTags.innerHTML += `<li>${tag}</li>`;
+            }
+        });
+    </script>
+</body>
+</html>
