@@ -1,4 +1,4 @@
-# Codewars Solutions
+# LeetCode Solutions
 
 My solutions to LeetCode programming challenges using C.
 
