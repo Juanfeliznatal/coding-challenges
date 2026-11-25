@@ -1,6 +1,4 @@
-# Coding Challenges
+Coding Challenges
 
-Repositório dedicado às minhas soluções de desafios de programação
-realizados no LeetCode e Codewars.
-
+This repository contains my solutions to programming challenges from Codewars and LeetCode.
 
